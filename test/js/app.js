@@ -20,99 +20,100 @@
 
 // // bài 3
 
-// // let str = prompt("Nhập vào một  mảng").split(" ");
-// // let newStr = [];
-// // for(let i=0; i<str.length; i++){
-// //     if(newStr.indexOf(str[i]) === -1){
-// //         newStr.push(str[i]);
-// //     }
-// // }
-
-// // alert(newStr);
-
-// // bài 4
-let FutureAcademy = [
-    {
-        ten: "Phuong",
-        tuoi: 21,
-        mucLuong: 10000,
-        chucVu: "Nhan Vien",
-    },
-    {
-        ten: "Anh",
-        tuoi: 21,
-        mucLuong: 100000,
-        chucVu: "Pho Giam Doc",
-    },
-    {
-        ten: "Lan",
-        tuoi: 21,
-        mucLuong: 1000000,
-        chucVu: "Giam Doc",
-    }
-]
-
-while (true) {
-    let check = prompt("Nhập chức năng U,C,R,D");
-    if (check == "U") {
-        let checkID =Number(prompt("Nhập id cần check"));
-        checkID = checkID -1;
-        let check1 = prompt("bạn muốn update thành phần nào")
-        if (check1 == "name") {
-            let newName = prompt("nhập tên cần update");
-            FutureAcademy[checkID].ten = newName;
-        }
-        else if (check1 == "tuoi") {
-            let newTuoi = prompt("Nhập tuổi cần update");
-            FutureAcademy[checkID].tuoi= newTuoi;
-        }
-        else if (check1 == "mucLuong") {
-            let newMucLuong = prompt("Nhập mức lương cần update");
-            FutureAcademy[checkID].mucLuong = newMucLuong;
-
-        }
-        else if (check1 == "chucVu") {
-            let newChucVu = prompt("Nhập chuc vu cần update");
-            FutureAcademy[checkID].chucVu= newChucVu;
-        }
-        else if (check1 == "all") {
-            let newName = prompt("nhập tên cần update");
-            let newTuoi = prompt("Nhập tuổi cần update");
-            let newMucLuong = prompt("Nhập mức lương cần update");
-            let newChucVu = prompt("Nhập chuc vu cần update");
-            FutureAcademy[checkID].ten = newName;
-            FutureAcademy[checkID].tuoi= newTuoi;
-            FutureAcademy[checkID].mucLuong = newMucLuong;
-            FutureAcademy[checkID].chucVu = newChucVu;
-        }
-
-    }
-    else if (check == "r"){
-        for (let i = 0; i < FutureAcademy.length; i++) {
-            console.log(`${FutureAcademy[i].ten}\n${FutureAcademy[i].tuoi}\n${FutureAcademy[i].mucLuong}\n${FutureAcademy[i].chucVu}\n`);
-        }
-    }
-    else if(check == "d"){
-        let checkID =Number(prompt("Nhập id  nhân viên cần xóa"));
-        checkID = checkID -1;
-        delete FutureAcademy[checkID];
-    }
-    else if (check == "c"){
-        let newName = prompt("nhập tên ");
-        let newTuoi = prompt("Nhập tuổi ");
-        let newMucLuong = prompt("Nhập mức lương ");
-        let newChucVu= prompt("Nhập chuc vu");
-        FutureAcademy[FutureAcademy.length] = {
-            ten: newName,
-            tuoi: newTuoi,
-            mucLuong: newMucLuong,
-            chucVu: newChucVu
-        }
-    }
-    else if(check == "esc"){
-        break;
+let str = prompt("Nhập vào một  mảng").split(" ");
+let newStr = [];
+for(let i=0; i<str.length; i++){
+    if(newStr.indexOf(str[i]) === -1){
+        newStr.push(str[i]);
     }
 }
+
+alert(newStr);
+
+// // bài 4
+
+// let FutureAcademy = [
+//     {
+//         ten: "Phuong",
+//         tuoi: 21,
+//         mucLuong: 10000,
+//         chucVu: "Nhan Vien",
+//     },
+//     {
+//         ten: "Anh",
+//         tuoi: 21,
+//         mucLuong: 100000,
+//         chucVu: "Pho Giam Doc",
+//     },
+//     {
+//         ten: "Lan",
+//         tuoi: 21,
+//         mucLuong: 1000000,
+//         chucVu: "Giam Doc",
+//     }
+// ]
+
+// while (true) {
+//     let check = prompt("Nhập chức năng U,C,R,D");
+//     if (check == "U") {
+//         let checkID =Number(prompt("Nhập id cần check"));
+//         checkID = checkID -1;
+//         let check1 = prompt("bạn muốn update thành phần nào")
+//         if (check1 == "name") {
+//             let newName = prompt("nhập tên cần update");
+//             FutureAcademy[checkID].ten = newName;
+//         }
+//         else if (check1 == "tuoi") {
+//             let newTuoi = prompt("Nhập tuổi cần update");
+//             FutureAcademy[checkID].tuoi= newTuoi;
+//         }
+//         else if (check1 == "mucLuong") {
+//             let newMucLuong = prompt("Nhập mức lương cần update");
+//             FutureAcademy[checkID].mucLuong = newMucLuong;
+
+//         }
+//         else if (check1 == "chucVu") {
+//             let newChucVu = prompt("Nhập chuc vu cần update");
+//             FutureAcademy[checkID].chucVu= newChucVu;
+//         }
+//         else if (check1 == "all") {
+//             let newName = prompt("nhập tên cần update");
+//             let newTuoi = prompt("Nhập tuổi cần update");
+//             let newMucLuong = prompt("Nhập mức lương cần update");
+//             let newChucVu = prompt("Nhập chuc vu cần update");
+//             FutureAcademy[checkID].ten = newName;
+//             FutureAcademy[checkID].tuoi= newTuoi;
+//             FutureAcademy[checkID].mucLuong = newMucLuong;
+//             FutureAcademy[checkID].chucVu = newChucVu;
+//         }
+
+//     }
+//     else if (check == "r"){
+//         for (let i = 0; i < FutureAcademy.length; i++) {
+//             console.log(`${FutureAcademy[i].ten}\n${FutureAcademy[i].tuoi}\n${FutureAcademy[i].mucLuong}\n${FutureAcademy[i].chucVu}\n`);
+//         }
+//     }
+//     else if(check == "d"){
+//         let checkID =Number(prompt("Nhập id  nhân viên cần xóa"));
+//         checkID = checkID -1;
+//         delete FutureAcademy[checkID];
+//     }
+//     else if (check == "c"){
+//         let newName = prompt("nhập tên ");
+//         let newTuoi = prompt("Nhập tuổi ");
+//         let newMucLuong = prompt("Nhập mức lương ");
+//         let newChucVu= prompt("Nhập chuc vu");
+//         FutureAcademy[FutureAcademy.length] = {
+//             ten: newName,
+//             tuoi: newTuoi,
+//             mucLuong: newMucLuong,
+//             chucVu: newChucVu
+//         }
+//     }
+//     else if(check == "esc"){
+//         break;
+//     }
+// }
 
 // // bài 5
 // let d = Number(prompt("nhập vào ngày"))

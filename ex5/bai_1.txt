@@ -1,0 +1,75 @@
+1. Những biến có tên không hợp lệ? 3 ví dụ
+    có hai hạn chế khi đặt tên biến
+        1. Tên biến chỉ chứa các chữ cái số hoạc kí hiếu $ và _
+        2. kí tự đầu tiên không được là chữ số, khộng được trùng với từ khóa
+    - Khi vi phạm 2 hạn chế trên thì chương trình sẽ báo lỗi 
+    ví dụ: 1phamLan
+            full/name
+            let
+
+    
+2. trong js làm thế nào để có thể kiểm tra kiểu dữ liệu của biến 
+    Để kiểm tra kiểu dữ liệu của biến có thể sử dụng các toán tử như là: 
+    typeof, instanceof, constructor property và phương thức toString của Obj
+
+======================================================================================
+
+1. Var và const trong js
+    var: phạm vi hoạt động: cục bộ khi khai báo trong  hàm ngược lại là toàn cục
+        va khi các biến được sử dụng lại thì cần khai báo lại:
+             var a =10;
+             var a = 11;
+    counst: khai báo các biến có giá trị không đổi 
+            không được cập nhập và khai bá lại 
+                
+2. sự khác nhau của var và let
+    khác nhau giữa var và let: 
+        -let có thể hoạt động toàn bộ chương trình khi khai báo còn var chỉ khi khai báo ngoài 1 hàm mới hoạt động toàn cục
+        -let sử dụng lại biến mà không cần khai báo lại 
+        -var biến có thể khởi tạo với undefined
+3. sự khách nhau của let và const 
+    Khác nhau giữa let và const: 
+        -const khi khai báo thì không thể cập nhập hoạc khai báo lại trong toàn bộ chương trình let ngược lại 
+4. sử dụng trong truongf hợp nào 
+    let: được sử dụng toàn bộ chương trình và không đucợ khai báo lại 
+    var: toàn cục khi khai báo bên ngoài 1 khối 
+         cục bộ khi được khai báo bên trong của một khối 
+    const: khai  báo một hắng số không thay đổi trong chương trình
+==========================================================================================================
+
+1. boolean 
+- chỉ có hai giá trị true hoạc false 
+====================================================
+
+1: SWAP
+        let a = 5;
+        let b = 6;
+        console.log(a,b);// xuất ra 5 6 
+
+        Cách 1:  dùng biến trung gian
+            let tem = a;
+            a=b;
+            b = tem;
+        Cách 2: dùng mảng 
+            [a,b] = [b,a];
+
+2. Split 
+    const s = 'Hello beauty there'
+    s.split(" ");
+    const a = Array(s);
+    console.log(a);
+
+4.1: x sẽ là property
+4.2  
+    for(let x in product){
+        console.log(`x: ${product[x]}`)
+    }
+
+5.
+    console.log(task.subject)// lấy subject
+    console.log(task.dueDate)// lấy dueDate
+    console.log(task.assignTo)// lấy assignTo
+
+6.
+    
+

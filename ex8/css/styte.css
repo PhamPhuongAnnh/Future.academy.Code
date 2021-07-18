@@ -1,0 +1,317 @@
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 15px;
+    
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    line-height: 1;
+}
+/* header */
+#header h1{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    background: teal;
+    margin: 0px;
+    padding: 10px;
+}
+
+/* end header */
+/* Content */
+#content{
+    line-height: 1.5;
+    width: 1270px;
+    margin: 40px auto;
+}
+
+
+
+/* paragrap */
+
+#paragraph{
+    margin: 0px auto;
+    font-family: 'Fuggles', cursive;
+   
+}
+
+#paragraph .box1 {
+    display: flex;
+    margin: 40px 0px;
+    font-size: 20px;
+}
+
+#paragraph .paragraph_left{
+    margin-right: 72px;
+    box-shadow: 5px 5px 5px 5px #dddddd;
+    padding: 0px 28px;
+}
+#paragraph  span{
+font-weight: bold;
+}
+/* end paragraph */
+
+/* Comment */
+#comments .item{
+    background: #f5f5f5;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+#comments .item .box2{
+display: flex;
+}
+#comments .item .box2 h3{
+    text-transform: capitalize;
+}
+#comments .item .box2 span{
+    color: yellowgreen;
+}
+#comments .item .box2 .date{
+    padding: 0px 10px;
+}
+#comments .item .box2 .icon i{
+    border: 1px solid;
+    padding: 5px;
+    font-size: 36px;
+    flex-wrap: wrap;
+    margin: 15px 0px 0px 909px;
+}
+#comments .item p{
+    padding: 0px 7px 0px 10px;
+}
+/* end comment */
+
+/* Client */
+#clients_say h2{
+    text-transform: uppercase;
+}
+#clients_say .underlined{
+    background: red;
+    width: 108px;
+    height: 4px;
+    margin-left: 565px;
+    margin-bottom: 64px;
+}
+#clients_say .list_item{
+    background: whitesmoke;
+    padding: 20px  0px;
+   
+}
+#clients_say ul{
+    display: flex;
+    margin: 70px;
+    justify-content: space-between;
+}
+
+#clients_say ul .item{
+display: flex;
+padding: 0px 10px;
+line-height: 1.5;
+
+}
+#clients_say ul .item .icon_H{
+    width: 64px;
+    height: 28px;
+    background: green;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    margin-right: 15px;
+}
+
+#clients_say .item_content span{
+    font-weight: bold;
+}
+/* end Client */
+
+
+/* contact- us */
+#contact_us h2{
+text-align: left;
+}
+#contact_us .underlined{
+    background: orange;
+    width: 70px;
+    height: 4px;
+    margin-bottom: 10px;
+}
+#contact_us .box3{
+    display: flex;
+    justify-content: space-between;
+}
+#contact_us   h3{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+#contact_us .box3 i{
+margin-right: 10px;
+}
+#contact_us .box3 .form input{
+    margin-bottom: 13px;
+    padding: 10px 543px 10px 6px;
+}
+#contact_us button{
+    background: green;
+    padding: 12px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 13px 550px;
+    border-radius: 10px;
+}
+/* end contact_us */
+
+/* developers */
+#developers h2{
+    color: yellow;
+    font-size: 50px;
+}
+#developers  .list_item{
+    margin-top: 20px;
+}
+#developers ul{
+display: flex;
+justify-content: space-between;
+}
+#developers ul li{
+    width: 546px;
+    margin-bottom: 18px;
+}
+
+#developers .logo{
+    width: 30px;
+    margin-bottom: 15px;
+}
+#developers .logo1 img{
+    width: 138px;
+    text-align: center;
+    margin: 17px 201px;
+    height: 132px;
+}
+#developers .logo img{
+    width: 241px;
+    text-align: center;
+    margin: 49px 19px 0px 155px;
+    height: 100px;
+
+}
+#developers .text{
+    text-align: center;
+}
+/* end developers */
+
+/* project */
+#project .list_item {
+    width: 1916px;
+        height: 378px;
+    margin-left: -327px;
+    background: whitesmoke;
+  
+}
+#project .box{
+    width: 1916px;
+    height: 168px;
+    background: #0505f99e;
+    margin-left: -327px;
+    color: white;
+    
+}
+#project .box h2{
+    padding: 0px 12px 1px 476px;
+    text-align: left;
+    text-transform: initial;
+    position: absolute;
+}
+#project .list_item ul{
+
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0px auto;
+    /* margin-right: 47px; */
+    padding: 0px 476px;
+    position: relative;
+    top: -32px;
+}
+#project ul li{
+    width: 350px;
+    margin-right: 27px;
+    background: white;
+    padding: 7px 11px 31px 30px;
+    line-height: 1.5;
+}
+#project .icon{
+
+    color: yellowgreen;
+    font-size: 31px;
+    padding-top: 45px;  
+}
+#project h3{
+    font-size: 28px;
+    text-transform: capitalize;
+    margin: 0;  
+
+}
+
+/* end project */
+/* plan */
+#plan{
+    background: rgb(235, 229, 229);
+    padding: 0px 50px 50px 50px;
+}
+#plan .box{
+    display: flex;
+    margin-top: 25px;
+}
+
+#plan .box1{
+    width: 500px;
+}
+#plan .box1 img{
+
+}
+#plan .box1 .text{
+    padding: 0px 25px;
+}
+#plan .box1 p{
+    width: 398px;
+}
+
+#plan .box1 h3{
+    width: 330px;
+    font-size: 24px;
+}
+
+#plan .list_item{
+
+    margin: -33px;
+}
+#plan .list_item  li{
+display: flex;
+padding-bottom: 20px;
+border-bottom: 1px dotted black;
+    
+}
+#plan li p{
+    padding: 17px 0px 0px 22px;
+    margin: 0px;
+}
+#plan .list_item .icon_H{
+    width: 90px;
+    height: 90px;
+    background: rgb(224, 21, 174);
+    font-size: 56px;
+    color: white;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+/* end plan */
+/* end content */

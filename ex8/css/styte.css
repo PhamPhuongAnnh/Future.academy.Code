@@ -230,6 +230,7 @@ justify-content: space-between;
     text-transform: initial;
     position: absolute;
 }
+
 #project .list_item ul{
 
     display: flex;
@@ -314,4 +315,64 @@ border-bottom: 1px dotted black;
 }
 
 /* end plan */
+
+/* web- chuẩn */
+#web_Chuan{
+    display: flex;
+    margin-top: 66px;
+}
+#web_Chuan .Hoc_web_Chuan 
+{
+    background: green;
+    width: 656px;
+    font-size: 40px;
+    color: white;
+    padding: 195px 6px 0px 32px;
+}
+
+#web_Chuan .content{
+    margin-left: 35px;
+}
+#web_Chuan .content h3{
+    font-size: 30px;
+    margin-top: -8px;
+}
+#web_Chuan .content ul.father{
+    display: flex;
+}
+#web_Chuan .content ul.father li{
+    margin-bottom: 13px;
+}
+#web_Chuan button{
+    padding: 11px;
+    background: green;
+    border-radius: 8px;
+}
+/* end web chuẩn */
+
+/* list */
+#list{
+    background: #f5f5f5;
+}
+#list .list_item li{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted black;
+      
+}
+#list .list_item .icon_H{
+    width: 90px;
+    height: 90px;
+    background: rgb(224, 21, 174);
+    font-size: 56px;
+    color: white;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+#list .list_item p{
+    padding: 17px 0px 0px 22px;
+    margin: 0px;
+}
+
+
 /* end content */

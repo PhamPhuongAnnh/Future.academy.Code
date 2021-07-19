@@ -275,9 +275,7 @@ justify-content: space-between;
 #plan .box1{
     width: 500px;
 }
-#plan .box1 img{
 
-}
 #plan .box1 .text{
     padding: 0px 25px;
 }
@@ -373,6 +371,200 @@ border-bottom: 1px dotted black;
     padding: 17px 0px 0px 22px;
     margin: 0px;
 }
+/* end list */
+
+/* contact form*/
 
 
+#contact_form h2{
+
+    margin: 34px;
+
+}
+ .inline_form input{
+    padding: 15px 319px 15px 18px;
+    font-size: 24px;
+}
+ .block input{
+
+    padding: 15px 956px 15px 17px;
+    font-size: 24px;
+    margin-bottom: 13px;
+}
+
+#contact_form textarea{
+    font-size: 24px;
+    padding: 15px 849px 150px 10px;
+}
+#contact_form button{
+    font-size: 24px;
+    padding: 23px 61px;
+    margin: 12px 85px 10px 613px;
+    background: green;
+    border-radius: 10px;
+    color: white;
+}
+/* end contact */
+
+/* Form_login */
+
+#form_login{
+    margin-top: 50px;
+}
+#form_login input, select{
+    margin-bottom: 20px;
+}
+#form_login select{
+    font-size: 24px;
+    padding: 15px 444px 15px 10px;
+}
+#form_login .block input{
+    padding: 15px 957px 400px 15px;
+}
+#form_login button{
+    background: black;
+    color: white;
+    font-size: 24px;
+    padding: 0px 581px 0px 611px;
+}
+#form_login p{
+    text-align:  center;
+}
+/* end form_login */
+
+/* form_blog */
+#form_blog .text_header{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 31px;
+}
+#form_blog ul {
+    display: flex;
+    padding: 0px;
+}
+#form_blog li{
+    padding: 0px 10px
+}
+#form_blog img{
+    width: 299px;
+}
+#form_blog h3{
+    font-size: 24px;
+}
+
+#form_blog .author{
+    text-transform: capitalize;
+}
+#form_blog .btn p{
+    width: 87px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/* end form_blog */
+
+/* out service */
+#our_Service .text_header{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 31px;
+}
+#our_Service ul{
+display: flex;
+padding: 0px;
+}
+#our_Service li{
+     /* padding: 0px 18px 3px 26px; */
+    background: #eeeeee;
+}
+#our_Service li.item{
+   
+    margin-right: 49px;
+}
+#our_Service .box{
+padding: 0px 20px;
+}
+
+
+#our_Service  li  .gb_green{
+    background: rgb(32, 121, 238);
+    /* height: 220px; */
+    color: white;
+    font-size: 37px;
+    margin: 0px;
+    padding: 156px 44px 124px 88px;
+    text-transform: capitalize;
+}
+#our_Service  li .text{
+    background:#eeeeee;
+}
+/* end our sẻvice */
+
+
+
+/* choosse_us */
+
+#choose_us .bg_black{
+    background: black;
+    height: 220px;
+    color: white;
+    font-size: 37px;
+    width: 806px;
+    margin: 0px;
+    padding: 219px 119px 114px 152px;
+    text-transform: capitalize;
+}
+#choose_us{
+    display: flex;
+}
+#choose_us .box{
+
+    margin-left: 104px;
+    width: 1509px;
+
+}
+#choose_us h3{
+    font-size: 31px;
+    margin: 0px;
+}
+#choose_us .underlined{
+    width: 81px;
+    height: 5px;
+    background: orange;
+    border-radius: 7px;
+}
+#choose_us .father{
+    display: flex;
+}
+#choose_us .child li{
+    
+    padding: 7px;
+
+}
+#choose_us i{
+color: green;
+
+}
+/* end choose_us */
 /* end content */
+
+
+/* footer */
+/* footer 1 */
+#footer_1{
+
+}
+#footer_1 .content{
+
+}
+#footer_1 .box{
+
+}
+#footer_1 .information_Link ul li{
+
+}
+#footer_1 .information_Link ul li h3{
+
+}
+
+/* end foter */

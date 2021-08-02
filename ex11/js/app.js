@@ -7,9 +7,10 @@ add.onclick = function () {
         const input = document.getElementById("todo-content");
         if (input.value) {
             const li = document.createElement("li");
+           
+            // console.log(icon);
             li.innerText = input.value;
             const deleteInput = document.createElement("a");
-
             deleteInput.innerText = "X";
             li.appendChild(deleteInput);
             deleteInput.onclick = function () {
@@ -27,11 +28,16 @@ add.onclick = function () {
             li.onclick = function () {
                 if (li.style.textDecoration == 'line-through') {
                     li.style.textDecoration = "none"
+                    deleteInput.style.textDecoration = "none"
+                    const icon = `<i class="fas fa-check"></i>`
+                    li.innerHTML = icon + input.value + deleteInput;
                 }
-                else{
+                else {
                     li.style.textDecoration = "line-through"
+                    const createIcon = document.createElement("a");
+                    const a = getSelection(a);
+                    deleteInput.style.textDecoration = "none"
                 }
-
             }
             ul.appendChild(li)
         } else {
@@ -62,11 +68,15 @@ add.onclick = function () {
             li.onclick = function () {
                 if (li.style.textDecoration == 'line-through') {
                     li.style.textDecoration = "none"
-                }
-                else{
-                    li.style.textDecoration = "line-through"
-                }
+                    const chose = document.createElement("i");
 
+                    
+                }
+                else {
+                    li.style.textDecoration = "line-through"
+                    deleteInput.style.textDecoration = "none";
+
+                }
             }
             ul.appendChild(li)
         } else {

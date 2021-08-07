@@ -40,6 +40,19 @@ a {
 #header-content .row .col-md-12 .navbar-toggler{
     background: none 0px 0px repeat scroll rgba(255, 255, 255, 0.1);
 }
+/* content */
+#wp-content .google-map iframe{
+    height: 500px;
+    width: 100%;
+}
+#wp-content .box iframe{
+ 
+    width: 100%;
+}
+#form input{
+    padding-right: 248px; 
+    width: 100%;
+}
 
 /* footer */
 #footer{

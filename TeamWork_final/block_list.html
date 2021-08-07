@@ -9,12 +9,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styte.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Contact</title>
 </head>
 
 <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
     <div id="wrapper">
         <nav class="navbar bg-dark navbar-dark  navbar-expand-md sticky-top d-flex justify-content-between">
             <a href="" class="navbar-brand"><img src="img/logo/logo-copy.png" style="height: 35px;"></a>
@@ -105,8 +109,52 @@
 
         <!-- content -->
         <div id="wp-content">
-            <h1 class="text-center">Hello world</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <div id="sidebar pt-5">
+                            
+                            <div id="recent_posts border">
+                                <h4 class="text-center text-capitalize border-bottom">recent posts</h4>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div id="content">
 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="email p-5 mt-4 bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="box-1 d-flex">
+                                <div class="icon" style="font-size: 40px;">
+                                    <i class="far fa-envelope"></i>
+                                </div>
+
+                                <p class="pt-2 pl-3">SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE NEWS,<br>
+                                    UPDATES, AND ANOTHER STUFF BY EMAIL.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex">
+                            <div id="form">
+                                <input type="text" placeholder="Enter your email" class="pt-3 pl-3 pb-3">
+                            </div>
+                            <div class="btn">
+                                <button class="btn bg-success pt-2 pb-2">Send</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <!-- end content -->
 
@@ -147,6 +195,7 @@
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+
 #wrapper {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -50,8 +51,43 @@ a {
     width: 100%;
 }
 #form input{
-    padding-right: 248px; 
+    /* padding-right: 15rem;  */
     width: 100%;
+}
+/* sidabar */
+#sidebar ul li {
+    border-top: 1px solid #d4d4d4;
+    padding: 12px 0px 12px 0    px;
+    /* font-weight: bold;   */
+    font-size: 14px;
+    width: 100%;
+}
+#sidebar h3 {
+    font-size: 17px;
+    margin: 0px;
+    background: #283943;
+}
+#sidebar .recent-posts a img {
+    width:120px;
+}
+
+#sidebar .recent-posts .date {
+    color: #857a7a;
+    margin: 18px auto 22px auto;
+}
+
+
+
+#sidebar .recent-posts .button a {
+    color: #4f9cb0;
+    border-bottom: 1px solid #4094a9;
+    text-transform: capitalize;
+}
+
+#sidebar .recent-posts a {
+    font-size: 12px;
+    margin: 0px;
+    color: black;
 }
 
 /* footer */

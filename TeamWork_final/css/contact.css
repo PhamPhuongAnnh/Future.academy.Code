@@ -28,6 +28,11 @@ a {
 }
 #header-content .row .col-md-12 input{
     background: none 0px 0px repeat scroll rgba(255, 255, 255, 0.1);
+    color: white;
+    /* padding-right: 40px; */
+    padding: 11px 119px 12px 15px;
+    font-size: 18px;
+    border-radius: 18px;
 }
 #header-content .row .col-md-12 .menu-list{
     background: none 0px 0px repeat scroll rgba(255, 255, 255, 0.1);
@@ -41,6 +46,56 @@ a {
 #header-content .row .col-md-12 .navbar-toggler{
     background: none 0px 0px repeat scroll rgba(255, 255, 255, 0.1);
 }
+
+.icon-search:hover{
+    cursor: pointer;
+    color: #ffc229;
+}
+
+.nav-links{
+    color: white;
+    margin: 5px 20px;
+}
+
+.nav-links:hover{
+    color: #ffc229;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color: #ffc229;
+}
+
+.icons:hover{
+    color: #ffc229;
+    cursor: pointer;
+}
+
+.dropdowns {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menus{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menus a{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-menus a:hover{color: #ffc229;}
+.dropdowns:hover .dropdown-menus {display: block;}
+
 /* content */
 #wp-content .google-map iframe{
     height: 500px;
@@ -70,7 +125,9 @@ a {
 #sidebar .recent-posts a img {
     width:120px;
 }
-
+#sidebar .recent-posts a img:hover{
+    transform:scale(1.1);
+}
 #sidebar .recent-posts .date {
     color: #857a7a;
     margin: 18px auto 22px auto;
@@ -89,17 +146,18 @@ a {
     margin: 0px;
     color: black;
 }
+
 /* content - block - list */
-#list-thumb ul li .img img{
+#content ul li .img img{
     border-radius: 50%;
    
     width: 200px;
 }
-#list-thumb ul li{
+#content ul li{
     margin-bottom: 20px;
      position: relative;
 }
-#list-thumb ul li .date{
+#content ul li .date{
     border-radius: 50%;
     height: 70px;
     width: 70px;
@@ -109,28 +167,29 @@ a {
     border: 1px solid #c1c0c0;
     position: absolute;
     top: 0px;
-    left: -7px;
+    left: 11px;
     background: white;
 }
-#list-thumb ul li .list-icon .icon a{
+#content ul li .list-icon .icon a{
     color: rgb(175, 173, 173);
 }
-#list-thumb ul li .list-icon .icon a:hover{
+#content ul li .list-icon .icon a:hover{
     color: #ffc229; 
     text-decoration: none;
  
 }
-#list-thumb ul li .read-more a{
+#content ul li .read-more a{
     color: #ffc229; 
     text-decoration: none;
   
 }
-#list-thumb ul li .read-more a:hover{
+#content ul li .read-more a:hover{
     color: black;
 }
-#list-thumb ul li .text{
+#content ul li .text{
     font-size: 30px;
 }
+
 /* footer */
 #footer{
     min-height: 300px;
@@ -139,4 +198,11 @@ a {
 #footer .container{
     padding-top: 100px;
     padding-top: 73px;  
+}
+
+/* card */
+#link-list  .container .row a:hover{
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 5px solid black ;
 }

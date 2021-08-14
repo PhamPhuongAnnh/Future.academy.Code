@@ -20,14 +20,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
     <div id="wrapper">
-        <nav class="navbar bg-dark navbar-dark  navbar-expand-md sticky-top d-flex justify-content-between">
+        <!-- <nav class="navbar bg-dark navbar-dark  navbar-expand-md sticky-top d-flex justify-content-between">
             <a href="" class="navbar-brand"><img src="img/logo/logo-copy.png" style="height: 35px;"></a>
             <form action="" class="form-inline">
                 <button class="btn btn-success ml-2">
                     By Now
                 </button>
             </form>
-        </nav>
+        </nav> -->
         <!-- header -->
         <div id="header">
 
@@ -39,15 +39,13 @@
                     <div class="row">
                         <div class="col-md-12">
                             <nav class="navbar navbar-dark navbar-expand-lg mt-4 justify-content-between">
-                                <a href="" class="navbar-brand"><img src="img/logo/logo1.png"></a>
-                                <form action="" class="form-inline">
-                                    <input type="text" class="form-control mr-3 ">
-                                    <button class="btn btn-success ml-2">
-                                        Search
-                                    </button>
+                                <a href="home.html" class="navbar-brand"><img src="img/logo/logo1.png"></a>
+                                <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+                                    <i class="fas fa-search icon-search"  style="font-size: 24px;" aria-hidden="true"></i>
+                                    <input class="form-control form-control-sm ml-3 w-75 " type="text"
+                                        placeholder="Search..." aria-label="Search" >
                                 </form>
                             </nav>
-
                             <nav
                                 class="navbar navbar-dark  bg-secondary navbar-expand-lg mt-4 menu-list justify-content-between sticky-top">
                                 <button class="navbar-toggler" data-toggle='collapse' data-target='#main-nav'>
@@ -56,46 +54,43 @@
                                 <div class="collapse navbar-collapse " id="main-nav">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light">Home</a>
+                                            <a href="home.html" class="nav-links">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Corssbody</a>
+                                            <a href="" class="nav-links">Corssbody</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Satchel Totes</a>
+                                            <a href="" class="nav-links">Satchel Totes</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Blog List</a>
+                                            <a href="block_list.html" class="nav-links">Blog List</a>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-light  " href="#"
-                                                id="navbarDropdown" role="button" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
+                                        <li class="nav-item dropdowns">
+                                            <a class="nav-links" href="shop.html">
                                                 Shop
                                             </a>
-                                            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item text-secondary " href="#">Quần áo Nam</a>
-                                                <a class="dropdown-item text-secondary " href="#">Quần áo nữ</a>
-                                                <a class="dropdown-item text-secondary " href="#">Quần áo trẻ em</a>
-
+                                            <div class="dropdown-menus">
+                                                <a class="dropdown-items" href="#">Quần áo Nam</a>
+                                                <a class="dropdown-items" href="#">Quần áo nữ</a>
+                                                <a class="dropdown-items" href="#">Quần áo trẻ em</a>
                                             </div>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Cart</a>
+                                            <a href="" class="nav-links">Cart</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Check out</a>
+                                            <a href="" class="nav-links">Check out</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Contact</a>
+                                            <a href="contact.html" class="nav-links">Contact</a>
                                         </li>
 
                                     </ul>
 
                                 </div>
                                 <div class="icon text-light">
-                                    <i class="fas fa-user p-2"></i>
-                                    <i class="fas fa-cart-arrow-down p-2"></i>
+                                    <i class="fas fa-user p-2 icons"></i>
+                                    <i class="fas fa-cart-arrow-down p-2 icons"></i>
                                 </div>
                             </nav>
                         </div>
@@ -112,13 +107,47 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-4 mt-5">
+                    <div class="col-lg-4 mt-5">
                         <div id="sidebar">
                             <ul class="recent-posts border p-0" style="width: 100%;">
                                 <h3 class="text-center text-uppercase pt-3 pb-3 text-light" style="width: 100%;">Recent
                                     Posts</h3>
-                                <li class="text-capitalize d-flex justify-content-center pt-3">
-                                    <a href=""><img src="img/block_list/img-blog6-255x255.png" class="pr-4" alt=""></a>
+                                <li class="text-capitalize d-flex justify-content-center pt-3 pb-3">
+                                    <a href="" style="overflow: hidden;">
+                                        <img src="img/block_list/img-blog6-255x255.png" class="pr-4" style="transition: transform ease-out .3s;" alt="">
+                                    </a>
+                                    <div class="box">
+                                        who needs pain while
+
+                                        <div class="date mt-2 mb-2 text-capitalize">
+                                            12 sep 2021
+                                        </div>
+                                        <button class="btn text-capitalize btn-danger" style="font-size: 11px;">
+                                            chi tiết <i class="fas fa-angle-right"></i>
+                                        </button>
+
+                                    </div>
+                                </li>
+                                <li class="text-capitalize d-flex justify-content-center pt-3 pb-3">
+                                    <a href="" style="overflow: hidden;">
+                                        <img src="img/block_list/img-blog7-255x255.png" class="pr-4" style="transition: transform ease-out .3s;" alt="">
+                                    </a>
+                                    <div class="box">
+                                        who needs pain while
+                                        <div class="date mt-2 mb-2 text-capitalize">
+                                            12 sep 2021
+                                        </div>
+                                        <button class="btn text-capitalize btn-danger" style="font-size: 11px;">
+                                            chi tiết <i class="fas fa-angle-right"></i>
+                                        </button>
+
+                                    </div>
+
+                                </li>
+                                <li class="text-capitalize d-flex justify-content-center pt-3 pb-3">
+                                    <a href="" style="overflow: hidden;">
+                                        <img src="img/block_list/post1-255x255.jpg" class="pr-4" style="transition: transform ease-out .3s;" alt="">
+                                    </a>
                                     <div class="box">
                                         who needs pain while
 
@@ -132,8 +161,10 @@
                                     </div>
 
                                 </li>
-                                <li class="text-capitalize d-flex justify-content-center pt-3">
-                                    <a href=""><img src="img/block_list/img-blog6-255x255.png" class="pr-4" alt=""></a>
+                                <li class="text-capitalize d-flex justify-content-center pt-3 pb-3 ">
+                                    <a href="" style="overflow: hidden;">
+                                        <img src="img/block_list/post3-255x255.jpg" class="pr-4" style="transition: transform ease-out .3s;" alt="">
+                                    </a>
                                     <div class="box">
                                         who needs pain while
 
@@ -147,38 +178,10 @@
                                     </div>
 
                                 </li>
-                                <li class="text-capitalize d-flex justify-content-center pt-3">
-                                    <a href=""><img src="img/block_list/img-blog7-255x255.png" class="pr-4" alt=""></a>
-                                    <div class="box">
-                                        who needs pain while
-
-                                        <div class="date mt-2 mb-2 text-capitalize">
-                                            12 sep 2021
-                                        </div>
-                                        <button class="btn text-capitalize btn-danger" style="font-size: 11px;">
-                                            chi tiết <i class="fas fa-angle-right"></i>
-                                        </button>
-
-                                    </div>
-
-                                </li>
-                                <li class="text-capitalize d-flex justify-content-center pt-3">
-                                    <a href=""><img src="img/block_list/post1-255x255.jpg" class="pr-4" alt=""></a>
-                                    <div class="box">
-                                        who needs pain while
-
-                                        <div class="date mt-2 mb-2 text-capitalize">
-                                            12 sep 2021
-                                        </div>
-                                        <button class="btn text-capitalize btn-danger" style="font-size: 11px;">
-                                            chi tiết <i class="fas fa-angle-right"></i>
-                                        </button>
-
-                                    </div>
-
-                                </li>
-                                <li class="text-capitalize d-flex justify-content-center pt-3">
-                                    <a href=""><img src="img/block_list/post3-255x255.jpg" class="pr-4" alt=""></a>
+                                <li class="text-capitalize d-flex justify-content-center pt-3 pb-3">
+                                    <a href="" style="overflow: hidden;">
+                                        <img src="img/block_list/post4-255x255.jpg" class="pr-4" style="transition: transform ease-out .3s;" alt="">
+                                    </a>
                                     <div class="box">
                                         who needs pain while
 
@@ -194,230 +197,190 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8 mt-5" style="width: 100%;" id="list-thumb">
-                        <h1>
+                    <div id="content" class="col-lg-8">
+                        <h1 class="mt-5 text-center" style="font-family: sevillana,sans-serif; font-size: 50px;">
                             Block list by my team
                         </h1>
                         <ul class="p-0" style="width: 100%;">
                             <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/img-blog5-255x255.png" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                <div class="row">
+                                    <div class="img col-lg-3 col-md-12 ">
+                                        <img src="img/block_list/img-blog5-255x255.png" alt="">
+                                        <div class="date">
+                                            12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="box pt-3 col-lg-9" style="    padding: 0px 27px 0px 30px; ">
+                                        <div class="text">
+                                            Who needs pain whiles
+                                        </div>
+                                        <div class="box4">
+                                            <div class="list-icon d-flex mb-3 mt-3">
+                                                <div class="icon  border-right pr-3 pl-1">
+                                                    <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
+                                                </div>
+                                                <div class="icon border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-folder-open"></i> Image <a
+                                                            href="">quote</a></a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-tags"></i> No tag</a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
+                                                </div>
+                                            </div>
+                                            <div class="read-more d-flex">
+                                                <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
+                            </li>
+                            
+                            <li class="d-flex " style="width: 100%;">
+                                <div class="row">
+                                    <div class="img col-lg-3 col-md-12 ">
+                                        <img src="img/block_list/post5-255x255.jpg" alt="">
+                                        <div class="date">
+                                            12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                        </div>
                                     </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
+                                    <div class="box pt-3 col-lg-9" style="    padding: 0px 27px 0px 30px; ">
+                                        <div class="text">
+                                            Who needs pain whiles
                                         </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
+                                        <div class="box4">
+                                            <div class="list-icon d-flex mb-3 mt-3">
+                                                <div class="icon  border-right pr-3 pl-1">
+                                                    <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
+                                                </div>
+                                                <div class="icon border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-folder-open"></i> Image <a
+                                                            href="">quote</a></a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-tags"></i> No tag</a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
+                                                </div>
+                                            </div>
+                                            <div class="read-more d-flex">
+                                                <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
+                                            </div>
                                         </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
                                     </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
+                                </div>
                             </li>
                             <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/img-blog6-255x255.png" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                <div class="row">
+                                    <div class="img col-lg-3 col-md-12 ">
+                                        <img src="img/block_list/post4-255x255.jpg" alt="">
+                                        <div class="date">
+                                            12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="box pt-3 col-lg-9" style="    padding: 0px 27px 0px 30px; ">
+                                        <div class="text">
+                                            Who needs pain whiles
+                                        </div>
+                                        <div class="box4">
+                                            <div class="list-icon d-flex mb-3 mt-3">
+                                                <div class="icon  border-right pr-3 pl-1">
+                                                    <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
+                                                </div>
+                                                <div class="icon border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-folder-open"></i> Image <a
+                                                            href="">quote</a></a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-tags"></i> No tag</a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
+                                                </div>
+                                            </div>
+                                            <div class="read-more d-flex">
+                                                <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
-                                    </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
-                                        </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
                             </li>
                             <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/img-blog7-255x255.png" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                <div class="row">
+                                    <div class="img col-lg-3 col-md-12 ">
+                                        <img src="img/block_list/post3-255x255.jpg" alt="">
+                                        <div class="date">
+                                            12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="box pt-3 col-lg-9" style="    padding: 0px 27px 0px 30px; ">
+                                        <div class="text">
+                                            Who needs pain whiles
+                                        </div>
+                                        <div class="box4">
+                                            <div class="list-icon d-flex mb-3 mt-3">
+                                                <div class="icon  border-right pr-3 pl-1">
+                                                    <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
+                                                </div>
+                                                <div class="icon border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-folder-open"></i> Image <a
+                                                            href="">quote</a></a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-tags"></i> No tag</a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
+                                                </div>
+                                            </div>
+                                            <div class="read-more d-flex">
+                                                <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
-                                    </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
-                                        </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
                             </li>
                             <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/post1-255x255.jpg" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                <div class="row">
+                                    <div class="img col-lg-3 col-md-12 ">
+                                        <img src="img/block_list/post1-255x255.jpg" alt="">
+                                        <div class="date">
+                                            12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
+                                        </div>
+                                    </div>
+                                    <div class="box pt-3 col-lg-9" style="    padding: 0px 27px 0px 30px; ">
+                                        <div class="text">
+                                            Who needs pain whiles
+                                        </div>
+                                        <div class="box4">
+                                            <div class="list-icon d-flex mb-3 mt-3">
+                                                <div class="icon  border-right pr-3 pl-1">
+                                                    <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
+                                                </div>
+                                                <div class="icon border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-folder-open"></i> Image <a
+                                                            href="">quote</a></a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-tags"></i> No tag</a>
+                                                </div>
+                                                <div class="icon  border-right pr-3 pl-2">
+                                                    <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
+                                                </div>
+                                            </div>
+                                            <div class="read-more d-flex">
+                                                <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
-                                    </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
-                                        </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
-                            </li>
-                            <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/post3-255x255.jpg" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
-                                    </div>
-                                </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
-                                    </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
-                                        </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
-                            </li>
-                            <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/post4-255x255.jpg" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
-                                    </div>
-                                </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
-                                    </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
-                                        </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
-                            </li>
-                            <li class="d-flex " style="width: 100%;">
-                                <div class="img">
-                                    <img src="img/block_list/post5-255x255.jpg" alt="">
-                                    <div class="date">
-                                        12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
-                                    </div>
-                                </div>
-                                <div class="box pt-3" style="padding: 0px 0px 0px 30px; ">
-                                    <div class="text">
-                                        Who needs pain whiles
-                                    </div>
-                                    <div class="list-icon d-flex mb-3 mt-3">
-                                        <div class="icon  border-right pr-3 pl-1">
-                                            <a href=""><i class="fas fa-user-alt"></i>7uptheme</a>
-                                        </div>
-                                        <div class="icon border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-folder-open"></i> Image <a href="">quote</a></a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-tags"></i> No tag</a>
-                                        </div>
-                                        <div class="icon  border-right pr-3 pl-2">
-                                            <a href=""><i class="fas fa-comments"></i> 2 Comments</a>
-                                        </div>
-
-                                    </div>
-                                    <div class="read-more d-flex">
-                                        <a href="">Read more<i class="fas fa-chevron-circle-right"></i></a>
-                                    </div>
                             </li>
                             
                         </ul>
                     </div>
-
-
-                    <div id="content">
-
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -430,18 +393,26 @@
                             <div class="icon" style="font-size: 40px;">
                                 <i class="far fa-envelope"></i>
                             </div>
-
                             <p class="pt-2 pl-3">SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE NEWS,<br>
                                 UPDATES, AND ANOTHER STUFF BY EMAIL.</p>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6 d-flex">
-                        <div id="form">
-                            <input type="text" placeholder="Enter your email" class="pt-3 pl-3 pb-3">
+                    <div class="col-md-12 col-lg-6 d-flex" style="with:100%">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8 col-sm-8 col-8">
+                                    <div id="form">
+                                        <input type="email" placeholder="Enter your email" class="pt-3 pl-3 pb-3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-4 col-4">
+                                    <div class="btn">
+                                        <button class="btn bg-success pt-2 pb-2">Send</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn">
-                            <button class="btn bg-success pt-2 pb-2">Send</button>
-                        </div>
+
 
                     </div>
                 </div>
@@ -452,7 +423,7 @@
     <!-- end content -->
 
     <!-- footer -->
-    <div id="footer" class="bg-dark p-5">
+    <div id="footer" class="bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-6 text-center pt-md-5">

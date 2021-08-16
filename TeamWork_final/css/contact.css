@@ -203,6 +203,6 @@ a {
 /* card */
 #link-list  .container .row a:hover{
     text-decoration: none;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 5px solid black ;
 }

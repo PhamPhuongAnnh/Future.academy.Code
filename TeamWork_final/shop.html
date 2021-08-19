@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/font/css/all.min.css">
+    <link rel="stylesheet" href="css/reponsive.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -26,82 +27,67 @@
 
 <body>
     <div id="wrapper">
-        <nav class="navbar bg-dark navbar-dark  navbar-expand-md sticky-top d-flex justify-content-between">
+        <!-- <nav class="navbar bg-dark navbar-dark  navbar-expand-md sticky-top d-flex justify-content-between">
             <a href="" class="navbar-brand"><img src="img/logo/logo-copy.png" style="height: 35px;"></a>
             <form action="" class="form-inline">
                 <button class="btn btn-success ml-2">
                     By Now
                 </button>
             </form>
-        </nav>
+        </nav> -->
         <!-- header -->
         <div id="header">
-
-
             <div id="header-content" class="pt-5"
-                style="background-image: url(img/banenr/shop-title-img-1.jpg);background-position: center 0px;    height: 520px;     background-color: rgb(248, 248, 248);">
-                <!-- thay đổi hình nền tối ở đây-->
+                style="background-image: url(img/banenr/bg_header1.png);background-position: center 0px;    height: 500px;     background-color: rgb(248, 248, 248);">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <nav class="navbar navbar-dark navbar-expand-lg mt-4 justify-content-between">
-                                <a href="" class="navbar-brand"><img src="img/logo/logo1.png"></a>
-                                <form action="" class="form-inline">
-                                    <input type="text" class="form-control mr-3 ">
-                                    <button class="btn btn-success ml-2">
-                                        Search
-                                    </button>
+                                <a href="home.html" class="navbar-brand"><img src="img/logo/logo1.png"></a>
+                                <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+                                    <i class="fas fa-search icon-search icons" style="color: white; font-size: 24px;"
+                                        aria-hidden="true"></i>
+                                    <input class="form-control form-control-sm ml-3 w-75 " type="text"
+                                        placeholder="Search..." style="color: white;" aria-label="Search">
                                 </form>
                             </nav>
 
                             <nav
-                                class="navbar navbar-dark  bg-secondary navbar-expand-lg mt-4 menu-list justify-content-between sticky-top">
+                                class="navbar navbar-dark navbar-expand-lg mt-4 menu-list justify-content-between sticky-top">
                                 <button class="navbar-toggler" data-toggle='collapse' data-target='#main-nav'>
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse " id="main-nav">
                                     <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link text-light">Home</a>
+                                        <li class="nav-item pr-5">
+                                            <a href="home.html" class="nav-links" style="font-size: 24px;">Home</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Corssbody</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Satchel Totes</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Blog List</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-light  " href="#"
-                                                id="navbarDropdown" role="button" data-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
+
+                                        <li class="nav-item dropdowns">
+                                            <a class="nav-links pr-5" href="shop.html" style="font-size: 24px;">
                                                 Shop
                                             </a>
-                                            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item text-secondary " href="#">Quần áo Nam</a>
-                                                <a class="dropdown-item text-secondary " href="#">Quần áo nữ</a>
-                                                <a class="dropdown-item text-secondary " href="#">Quần áo trẻ em</a>
-
+                                            <div class="dropdown-menus">
+                                                <a class="dropdown-items" href="shop.html" style="font-size: 24px;">Quần áo Nam</a>
+                                                <a class="dropdown-items" href="shop.html" style="font-size: 24px;">Quần áo nữ</a>
+                                                <a class="dropdown-items" href="shop.html" style="font-size: 24px;">Quần áo trẻ em</a>
                                             </div>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Cart</a>
+                                        <li class="nav-item pr-5">
+                                            <a href="cart.html" class="nav-links" style="font-size: 24px;">Cart</a>
+                                        </li>
+                                        <li class="nav-item pr-5">
+                                            <a href="block_list.html" class="nav-links" style="font-size: 24px;">Block list</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Check out</a>
+                                            <a href="contact.html" class="nav-links" style="font-size: 24px;">Contact</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-link text-light mr-3">Contact</a>
-                                        </li>
-
                                     </ul>
 
                                 </div>
                                 <div class="icon text-light">
-                                    <i class="fas fa-user p-2"></i>
-                                    <i class="fas fa-cart-arrow-down p-2"></i>
+                                    <i class="fas fa-user p-2 icons"></i>
+                                    <i class="fas fa-cart-arrow-down p-2 icons"></i>
                                 </div>
                             </nav>
                         </div>
@@ -118,587 +104,568 @@
 
             <div id="shop-wrapper">
                 <div class="grid wide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 m-4">
-                                <div class="shop-wrapper__sidebar">
-                                    <h2 class="sidebar-heading">
-                                        Category
-                                    </h2>
-                                    <ul class="product-categories">
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Uncategorized
-                                            </a>
-                                            <span>(0)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Accessories
-                                            </a>
-                                            <span>(12)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Bag & Shoe
-                                            </a>
-                                            <span>(11)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Bags
-                                            </a>
-                                            <span>(9)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Clothing
-                                            </a>
-                                            <span>(11)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Dresses
-                                            </a>
-                                            <span>(2)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Dresses & Skirts
-                                            </a>
-                                            <span>(6)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Eyewear
-                                            </a>
-                                            <span>(9)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Hat
-                                            </a>
-                                            <span>(9)</span>
-                                        </li>
-                                        <li class="cat-item">
-                                            <a href="" class="cat-item__link">
-                                                Tshirt
-                                            </a>
-                                            <span>(7)</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="shop-wrapper__featured">
-                                    <h2 class="sidebar-heading">
-                                        Special products
-                                    </h2>
-                                    <div class="featured-product">
-                                        <div class="row">
-                                            <div class="col l-6">
-                                                <div class="featured-product-item">
-                                                    <a href="" class="featured-product-item__link">
-                                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19.png"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col l-6">
-                                                <div class="featured-product-item">
-                                                    <a href="" class="featured-product-item__link">
-                                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/14.png"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col l-6">
-                                                <div class="featured-product-item">
-                                                    <a href="" class="featured-product-item__link">
-                                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/16.png"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col l-6">
-                                                <div class="featured-product-item">
-                                                    <a href="" class="featured-product-item__link">
-                                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/17.png"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col l-6">
-                                                <div class="featured-product-item">
-                                                    <a href="" class="featured-product-item__link">
-                                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/8.png"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col l-6">
-                                                <div class="featured-product-item">
-                                                    <a href="" class="featured-product-item__link">
-                                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/2.png"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 m-8">
-                                <div class="shop-wrapper__main">
-                                    <div class="block-tag">
-                                        <span class="block-tag__title">Hot Tag</span>
-                                        <a href="" class="block-tag__link">
-                                            <span>been</span>
+                    <div class="row">
+                        <div class="col l-3 m-4">
+                            <div class="shop-wrapper__sidebar">
+                                <h2 class="sidebar-heading">
+                                    Category
+                                </h2>
+                                <ul class="product-categories">
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Uncategorized 
                                         </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>consequat</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>cotton</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>cupidatat</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>dolore</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>dummy</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>esmet</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>ever</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>fashion</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a>
-                                        <a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a><a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a><a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a><a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a><a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a><a href="" class="block-tag__link">
-                                            <span>been</span>
-                                        </a>
-                                        <i class="fas fa-angle-double-down drowpdown"></i>
-                                    </div>
-                                </div>
-                                <div class="shop-wrapper__toolbar">
-                                    <div class="toolbar-result">
-                                        <p>Showing all <span>16</span> result</p>
-                                    </div>
-                                    <div class="toolbar-selection">
-                                        <select name="" id="">
-                                            <option value="">Sort by popularity</option>
-                                            <option value="">Sort by average rating</option>
-                                            <option value="" selected="selected">Default sorting</option>
-                                            <option value="">Sort by latest</option>
-                                            <option value="">Sort by price: low to high</option>
-                                            <option value="">Sort by price: high to low</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <ul class="shop-wrapper__products row">
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/9.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Cotton Lycra Leggings</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <span>(0)</span>
                                     </li>
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/16-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/13.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Lui officia deserunt</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Accessories
+                                        </a>
+                                        <span>(12)</span>
                                     </li>
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/10-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/12.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Cotton Lycra Leggings</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Bag & Shoe
+                                        </a>
+                                        <span>(11)</span>
                                     </li>
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/12-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Cotton Lycra Leggings</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Bags
+                                        </a>
+                                        <span>(9)</span>
                                     </li>
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/14-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/13.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Cotton Lycra Leggings</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Clothing
+                                        </a>
+                                        <span>(11)</span>
                                     </li>
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/9.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Cotton Lycra Leggings</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Dresses
+                                        </a>
+                                        <span>(2)</span>
                                     </li>
-                                    <li class="col l-4">
-                                        <div class="item-product">
-                                            <div class="item-product__thumb">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19-405x516.png"
-                                                    alt="" class="item-product__thumb--above">
-                                                <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/9.png"
-                                                    alt="" class="item-product__thumb--behind">
-                                                <div class="item-product__thumb-cart">
-                                                    <div class="thumb-cart">
-                                                        <ul class="cart-list">
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-heart"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-search"></i>
-                                                                </a>
-                                                            </li>
-                                                            <li class="cart-item">
-                                                                <a href="" class="cart-item__link">
-                                                                    <i class="fas fa-external-link-square-alt"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="" class="cart-btn">ADD TO CART</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item-product__infor">
-                                                <h2 class="item-product__infor-title">
-                                                    <a href="">Cotton Lycra Leggings</a>
-                                                </h2>
-                                                <div class="item-product__infor-price">
-                                                    <p class="item-product__infor-old-price">
-                                                        <span>£</span>
-                                                        250.00
-                                                    </p>
-                                                    <p class="item-product__infor-current-price">
-                                                        <span>£</span>
-                                                        226.00
-                                                    </p>
-                                                </div>
-                                                <div class="item-product__infor-rating">
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="fas fa-star solid-star"></i>
-                                                    <i class="far fa-star hollow-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Dresses & Skirts
+                                        </a>
+                                        <span>(6)</span>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Eyewear
+                                        </a>
+                                        <span>(9)</span>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Hat
+                                        </a>
+                                        <span>(9)</span>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="" class="cat-item__link">
+                                            Tshirt
+                                        </a>
+                                        <span>(7)</span>
                                     </li>
                                 </ul>
                             </div>
+                            <div class="shop-wrapper__featured">
+                                <h2 class="sidebar-heading">
+                                    Special products
+                                </h2>
+                                <div class="featured-product">
+                                    <div class="row">
+                                        <div class="col l-6 m-6">
+                                            <div class="featured-product-item">
+                                                <a href="" class="featured-product-item__link">
+                                                    <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6">
+                                            <div class="featured-product-item">
+                                                <a href="" class="featured-product-item__link">
+                                                    <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/14.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6">
+                                            <div class="featured-product-item">
+                                                <a href="" class="featured-product-item__link">
+                                                    <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/16.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6">
+                                            <div class="featured-product-item">
+                                                <a href="" class="featured-product-item__link">
+                                                    <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/17.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6">
+                                            <div class="featured-product-item">
+                                                <a href="" class="featured-product-item__link">
+                                                    <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/8.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col l-6 m-6">
+                                            <div class="featured-product-item">
+                                                <a href="" class="featured-product-item__link">
+                                                    <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/2.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-9 m-8">
+                            <div class="path">
+        
+                            </div>
+                            <div class="shop-wrapper__main">
+                                <div class="block-tag">
+                                    <span class="block-tag__title">Hot Tag</span>
+                                    <a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>consequat</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>cotton</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>cupidatat</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>dolore</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>dummy</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>esmet</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>ever</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>fashion</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a>
+                                    <a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a><a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a><a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a><a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a><a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a><a href="" class="block-tag__link">
+                                        <span>been</span>
+                                    </a>
+                                    <i class="fas fa-angle-double-down drowpdown"></i>
+                                </div>
+                            </div>
+                            <div class="shop-wrapper__toolbar">
+                                <div class="toolbar-result">
+                                    <p>Showing all <span>16</span> result</p>
+                                </div>
+                                <div class="toolbar-selection">
+                                    <select name="" id="">
+                                        <option value="">Sort by popularity</option>
+                                        <option value="">Sort by average rating</option>
+                                        <option value="" selected="selected">Default sorting</option>
+                                        <option value="">Sort by latest</option>
+                                        <option value="">Sort by price: low to high</option>
+                                        <option value="">Sort by price: high to low</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="shop-wrapper__products row">
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/9.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Cotton Lycra Leggings</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/16-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/13.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Lui officia deserunt</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/10-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/12.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Cotton Lycra Leggings</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/12-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Cotton Lycra Leggings</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/14-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/08/13.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Cotton Lycra Leggings</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/9.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Cotton Lycra Leggings</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col l-4 m-4">
+                                    <div class="item-product">
+                                        <div class="item-product__thumb">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/19-405x516.png" alt="" class="item-product__thumb--above">
+                                            <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/9.png" alt="" class="item-product__thumb--behind">
+                                            <div class="item-product__thumb-cart">
+                                                <div class="thumb-cart">
+                                                    <ul class="cart-list">
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-heart"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-search"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="cart-item">
+                                                            <a href="" class="cart-item__link">
+                                                                <i class="fas fa-external-link-square-alt"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="" class="cart-btn">ADD TO CART</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-product__infor">
+                                            <h2 class="item-product__infor-title">
+                                                <a href="">Cotton Lycra Leggings</a>
+                                            </h2>
+                                            <div class="item-product__infor-price">
+                                                <p class="item-product__infor-old-price">
+                                                    <span>£</span>
+                                                    250.00
+                                                </p>
+                                                <p class="item-product__infor-current-price">
+                                                    <span>£</span>
+                                                    226.00
+                                                </p>
+                                            </div>
+                                            <div class="item-product__infor-rating">
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="fas fa-star solid-star"></i>
+                                                <i class="far fa-star hollow-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- //chổ nào đaau -->
+                            </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 

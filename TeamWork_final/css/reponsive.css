@@ -1,0 +1,40 @@
+/* Mobile */
+
+@media only screen and (max-width: 740px){
+    
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 740px) and ( max-width: 1024px){
+    .block-tag{
+        padding-right: 10px;
+    }
+
+    .item-product__infor-title{
+        text-align: center;
+    }
+
+    .item-product__infor-title a{
+        font-size: 14px;
+    }
+
+    .item-product__infor{
+        justify-content: center;
+    }
+
+    .item-product__infor-old-price{
+        font-size:12px;
+    }
+    
+    .item-product__infor-current-price{
+        font-size: 15px;
+    }
+
+    .drowpdown{
+        font-size:12px;
+        top: 12px;
+        margin-right: -16px;
+    }
+}

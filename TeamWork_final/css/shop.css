@@ -190,6 +190,7 @@
 
 .item-product__thumb{
     position: relative;
+    display: flex;
 }
 
 
@@ -238,6 +239,7 @@
     opacity: 0;
     width: 100%;
     transition: all 0.5s ease-out 0s;
+    height: 100%;
 }
 
 .item-product__thumb-cart{

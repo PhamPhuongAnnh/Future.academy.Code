@@ -19,7 +19,10 @@ h3 {
 a {
     text-decoration: none;
 }
-
+a:hover {
+    text-decoration: none;
+   
+}
 /* header */
 #wrapper #header  #header-content{
     height: 500px;

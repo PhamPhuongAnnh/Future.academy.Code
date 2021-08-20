@@ -16,68 +16,68 @@
 </head>
 
 <body>
+    <!-- <style>
+        *{
+            font-size: 18px;
+        }
+    </style> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
-    <div id="wrapper">
-
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0" nonce="iFhQ5fRV"></script>
         <!-- header -->
         <div id="header">
             <div id="header-content" class="pt-5"
-                style="background-image: url(img/banenr/shop-title-img-1.jpg);background-position: center 0px;    height: 520px;     background-color: rgb(248, 248, 248);">
-                <!-- thay đổi hình nền tối ở đây-->
+                style="background-image: url(img/banenr/bg_header1.png);background-position: center 0px;    height: 500px;     background-color: rgb(248, 248, 248);">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <nav class="navbar navbar-dark navbar-expand-lg mt-4 justify-content-between">
                                 <a href="home.html" class="navbar-brand"><img src="img/logo/logo1.png"></a>
                                 <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
-                                    <i class="fas fa-search icon-search" style="font-size: 24px;"
+                                    <i class="fas fa-search icon-search icons" style="color: white; font-size: 24px;"
                                         aria-hidden="true"></i>
                                     <input class="form-control form-control-sm ml-3 w-75 " type="text"
-                                        placeholder="Search..." aria-label="Search">
+                                        placeholder="Search..." style="color: white;" aria-label="Search">
                                 </form>
                             </nav>
 
                             <nav
-                                class="navbar navbar-dark  bg-secondary navbar-expand-lg mt-4 menu-list justify-content-between sticky-top">
+                                class="navbar navbar-dark navbar-expand-lg mt-4 menu-list justify-content-between sticky-top">
                                 <button class="navbar-toggler" data-toggle='collapse' data-target='#main-nav'>
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse " id="main-nav">
                                     <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a href="home.html" class="nav-links">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-links">Corssbody</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-links">Satchel Totes</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="block_list.html" class="nav-links">Blog List</a>
-                                        </li>
-                                        <li class="nav-item dropdowns">
-                                            <a class="nav-links" href="shop.html">
-                                                Shop
-                                            </a>
-                                            <div class="dropdown-menus">
-                                                <a class="dropdown-items" href="#">Quần áo Nam</a>
-                                                <a class="dropdown-items" href="#">Quần áo nữ</a>
-                                                <a class="dropdown-items" href="#">Quần áo trẻ em</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-links">Cart</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="" class="nav-links">Check out</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="contact.html" class="nav-links">Contact</a>
+                                        <li class="nav-item pr-5">
+                                            <a href="home.html" class="nav-links" style="font-size: 24px;">Home</a>
                                         </li>
 
+                                        <li class="nav-item dropdowns">
+                                            <a class="nav-links pr-5" href="shop.html" style="font-size: 24px;">
+                                                Shop
+                                            </a>
+                                            <div class="dropdown-menus" style="min-width: 230px;">
+                                                <a class="dropdown-items" href="shop.html" style="font-size: 24px;">Quần
+                                                    áo Nam</a>
+                                                <a class="dropdown-items" href="shop.html" style="font-size: 24px;">Quần
+                                                    áo nữ</a>
+                                                <a class="dropdown-items" href="shop.html" style="font-size: 24px;">Quần
+                                                    áo trẻ em</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item pr-5">
+                                            <a href="cart.html" class="nav-links" style="font-size: 24px;">Cart</a>
+                                        </li>
+                                        <li class="nav-item pr-5">
+                                            <a href="block_list.html" class="nav-links" style="font-size: 24px;">Block
+                                                list</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="contact.html" class="nav-links"
+                                                style="font-size: 24px;">Contact</a>
+                                        </li>
                                     </ul>
 
                                 </div>
@@ -97,7 +97,7 @@
 
         <!-- content -->
         <div id="wp-content">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8">
                         <div id="demo" class="carousel slide mt-5" style="animation-timing-function: ease;"
@@ -123,7 +123,7 @@
                                         alt="Los Angeles">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/slide/girl-1828536_960_720.webp" style="width: 100%;"
+                                    <img src="img/slide/woman-2563491_960_720.webp  " style="width: 100%;"
                                         alt="Los Angeles">
                                 </div>
                                 <div class="carousel-item">
@@ -178,7 +178,7 @@
                                         </p>
                                     </div>
                                     <div class="col-lg-6">
-                                        <img src="https://canifa.7uptheme.net/wp-content/uploads/2015/09/12.png"
+                                        <img src="img/slide/woman-1867093_960_720.webp"
                                             style="width: 100%; height: 313px;" alt="">
                                     </div>
                                 </div>
@@ -257,32 +257,35 @@
                                 style="text-decoration: underline; font-weight: bold; font-size: 22px;">đ</span>
                         </div>
                         <div class="size mt-3">
-                            <h4>Size</h4>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
-                                <label class="form-check-label" for="inlineRadio1">XS</label>
+                            <h4 class="pb-3">Size</h4>
+                            <div class="check pb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">XS</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">S</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">M</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">L</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">XL</label>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
-                                <label class="form-check-label" for="inlineRadio2">S</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                    value="option3">
-                                <label class="form-check-label" for="inlineRadio3">M</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
-                                    value="option4">
-                                <label class="form-check-label" for="inlineRadio4">L</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5"
-                                    value="option5">
-                                <label class="form-check-label" for="inlineRadio5">XL</label>
-                            </div>
+
                         </div>
                         <div>
                             <button class="btn-add">ADD TO CART</button>
@@ -305,7 +308,7 @@
                                         </div>
                                         <div class="modal-body">
                                             <img src="https://dongphuc.dony.vn/wp-content/uploads/2019/10/ao-nu.jpg"
-                                                width="100%" alt="">
+                                               style=" width:   100%; height: 100%; " alt="">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -395,9 +398,12 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="600" data-numposts="5"></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -408,10 +414,10 @@
 
             <div id="wp-content">
                 <h1 class="text-center" style="margin-top: 20px;">MỘT SỐ SẢN PHẨM KHÁC</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card" style="width: 16rem; margin: 10px 5px;">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="card" style="width: 16rem; margin: 10px auto;">
                                 <span class="status-product-sale">11%</span>
                                 <div class="flip-box">
                                     <div class="flip-box-inner">
@@ -467,7 +473,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="card" style="width: 16rem; margin: 10px 5px;">
+                            <div class="card" style="width: 16rem; margin: 10px auto;">
                                 <span class="status-product-sale">11%</span>
                                 <div class="flip-box">
                                     <div class="flip-box-inner">
@@ -525,7 +531,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="card" style="width: 16rem; margin: 10px 5px;">
+                            <div class="card" style="width: 16rem; margin: 10px auto;">
                                 <span class="status-product-sale">11%</span>
                                 <div class="flip-box">
                                     <div class="flip-box-inner">
@@ -582,7 +588,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="card" style="width: 16rem; margin: 10px 5px;">
+                            <div class="card" style="width: 16rem; margin: 10px auto;">
                                 <span class="status-product-sale">11%</span>
                                 <div class="flip-box">
                                     <div class="flip-box-inner">
@@ -648,39 +654,39 @@
 
                 <!-- email -->
                 <div class="email mt-5"
-                style="background-image: url(https://www.cloud3dprint.com/assets/images/img/1920x1080/img19.jpg);background-position: center 0px; background-repeat: no-repeat ;">
-                <div class="container pt-5 pb-5">
-                    <div class="row ">
-                        <div class="col-lg-6">
-                            <div class="email-info">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>
-                                    <div class="col-lg-10">
-                                        <div>SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE NEWS,
-                                            UPDATES, AND ANOTHER STUFF BY EMAIL.</div>
+                    style="background-image: url(https://www.cloud3dprint.com/assets/images/img/1920x1080/img19.jpg);background-position: center 0px; background-repeat: no-repeat ;">
+                    <div class="container pt-5 pb-5">
+                        <div class="row ">
+                            <div class="col-lg-6">
+                                <div class="email-info">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div>SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE NEWS,
+                                                UPDATES, AND ANOTHER STUFF BY EMAIL.</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="email-info-2">
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <input type="text" class="pt-md-3 pb-md-3 pr-md-4 pt-sm-3 pb-sm-3 pr-sm-4 "
-                                            placeholder="YOUR EMAIL ADDRESS">
+                            <div class="col-lg-6">
+                                <div class="email-info-2">
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <input type="text" class="pt-md-3 pb-md-3 pr-md-4 pt-sm-3 pb-sm-3 pr-sm-4 "
+                                                placeholder="YOUR EMAIL ADDRESS">
+                                        </div>
+                                        <div class="col-lg-3 pt-2">
+                                            <button class="btn btn-warning">SIGN UP</button>
+                                        </div>
                                     </div>
-                                    <div class="col-lg-3 pt-2">
-                                        <button class="btn btn-warning">SIGN UP</button>
-                                    </div>
+
                                 </div>
-    
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
                 <!-- end email -->
             </div>
 

@@ -18,6 +18,11 @@ h3 {
 
 a {
     text-decoration: none;
+  
+}
+a:hover {
+    text-decoration: none;
+  
 }
 
 /* header */
@@ -341,7 +346,7 @@ a {
     border: 0.5px solid #ffc229;
     cursor: pointer;
     height: 40px;
-
+  
     animation: slide-up 1.0s ease;
 
 }
@@ -350,6 +355,7 @@ a {
     background-color: #ff9900;
     color: white;
     border: 0.5px solid #ff9900;
+  
 }
 
 .div-icons-add-to-cart{
@@ -377,6 +383,7 @@ a {
     background-color: #212529;
     height: 40px;
     cursor: pointer;
+    border-radius: 7px;
 }
 
 .btn-add:hover{

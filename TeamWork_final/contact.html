@@ -339,6 +339,18 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
+                else $(".lentop").fadeOut();
+            });
+            $(".lentop").click(function () {
+                $("body,html").animate({ scrollTop: 0 }, "slow");
+            });
+        });
+    </script>
+
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/contact.js"></script>

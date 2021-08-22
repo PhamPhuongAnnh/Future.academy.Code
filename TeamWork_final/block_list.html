@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
@@ -209,7 +209,8 @@
                                             12 <br> <span style="color: rgb(167, 167, 167);">dec 2021</span>
                                         </div>
                                     </div>
-                                    <div class="box pt-3 col-lg-9 col-md-12 col-sm-12 col-12" style="    padding-left: 30px; ">
+                                    <div class="box pt-3 col-lg-9 col-md-12 col-sm-12 col-12"
+                                        style="    padding-left: 30px; ">
                                         <div class="text">
                                             Who needs pain whiles
                                         </div>
@@ -383,7 +384,7 @@
                 </div>
             </div>
         </div>
-<!-- email -->
+        <!-- email -->
         <div class="email mt-5"
             style="background-image: url(https://www.cloud3dprint.com/assets/images/img/1920x1080/img19.jpg);background-position: center 0px; background-repeat: no-repeat ;">
             <div class="container pt-5 pb-5">
@@ -460,6 +461,18 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
+                else $(".lentop").fadeOut();
+            });
+            $(".lentop").click(function () {
+                $("body,html").animate({ scrollTop: 0 }, "slow");
+            });
+        });
+    </script>
+
     <script src="js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/contact.js"></script>

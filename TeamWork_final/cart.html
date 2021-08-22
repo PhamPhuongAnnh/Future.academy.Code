@@ -23,9 +23,6 @@
 </head>
 
 <body>
-
-
-    <!-- header -->
     <div id="header">
         <div id="header-content" class="pt-5"
             style="background-image: url(img/banenr/bg_header1.png);background-position: center 0px;    height: 500px;     background-color: rgb(248, 248, 248);">
@@ -74,7 +71,8 @@
                                             list</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="contact.html" class="nav-links" style="font-size: 24px;">Contact</a>
+                                        <a href="contact.html" class="nav-links"
+                                            style="font-size: 24px;">Contact</a>
                                     </li>
                                 </ul>
 
@@ -91,6 +89,9 @@
 
         </div>
     </div>
+
+    <!-- header -->
+    
     <!-- end header -->
     <section class="jumbotron text-center">
         <div class="container">
@@ -253,6 +254,17 @@
     </div>
     <!-- end footer -->
     <script src="./js/cart.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) $(".lentop").fadeIn();
+                else $(".lentop").fadeOut();
+            });
+            $(".lentop").click(function () {
+                $("body,html").animate({ scrollTop: 0 }, "slow");
+            });
+        });
+    </script>
 
 </body>
 
